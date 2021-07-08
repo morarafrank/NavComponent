@@ -13,5 +13,8 @@
         <action android:id="@+id/action_loginFragment_to_infoFragment" app:destination="@id/infoFragment"/>
     </fragment>
     <fragment android:id="@+id/infoFragment" android:name="com.frankmorara.navcomponent.InfoFragment"
-              android:label="Info" tools:layout="@layout/fragment_info"/>
+              android:label="Info" tools:layout="@layout/fragment_info">
+        <action android:id="@+id/action_infoFragment_to_homeFragment" app:destination="@id/homeFragment"
+                app:popUpTo="@id/homeFragment"/>
+    </fragment>
 </navigation>
